@@ -16,4 +16,4 @@ Special thanks to SaltySasha who did original patch for MC3 HostFS and for figur
 * Just click mc game entry to play MC3 unpacked!
 
 ## Known Issues
-* Black screen after race if you apply fixes from ghosty at this moment. Without that patch, game stability is on par with original game.
+* Black screen after race if you apply fixes from ghostie at this moment. Without that patch, game stability is expected to be par with original game, but may better because doesn't use buggy `zipFile` classes.
