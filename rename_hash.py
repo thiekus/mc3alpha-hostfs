@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# Enumerate
+# Enumerate and rename stream audio hash extracted by hash_build
 # Coded by Thiekus on 17th August 2026
 
 import os
