@@ -57,6 +57,9 @@ patch=0,EE,001a816c,word,00000000
 patch=0,EE,001A8334,word,00000000
 patch=0,EE,001A8348,word,00000000
 
+// NOP at useless ipcSleep(1) when stream on buffering at datStreamer::Worker
+patch=0,EE,003F4258,word,00000000
+
 [Unpacked Streams]
 description=Use unpacked streams audio instead of STREAMS.DAT. Only enable this after you properly extract STREAMS.DAT!
 author=Thiekus
