@@ -21,7 +21,7 @@ Special thanks to SaltySasha who did original patch for MC3 HostFS and for figur
 * Download `hash_build.py` also from where you got `dave.py` before.
 * Open `extract_streams.bat` script until finished when console print `* All Extracted! *`.
 * You can delete `STREAMS` folder and `STREAMS.DAT` as you wish which contains unlinked and unknown streams from playlist.
-* On Patches, Enable "HostFS Unpacked" patch.
+* On Patches, Enable "Unpacked Streams" patch.
 
 ## Known Issues
-* Black screen after race if you apply *outdated* fixes from ghostie, please update ghostie pnach patches from [here](https://hiddenpalace.org/Midnight_Club_3:_DUB_Edition_(Oct_24,_2004_Prototype)). Without that patch, game stability is expected to be on par with original game, but may be slightly better because doesn't use buggy `zipFile` classes.
+* Black screen after race if you apply *outdated* fixes from ghostie, please update ghostie pnach patches from [here](https://hiddenpalace.org/Midnight_Club_3:_DUB_Edition_(Oct_24,_2004_Prototype)). Without that patch, game stability is expected to be on par with original game, but may slightly better than original because doesn't use buggy `zipFile` classes.
