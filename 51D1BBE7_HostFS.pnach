@@ -58,7 +58,7 @@ patch=0,EE,001A8334,word,00000000
 patch=0,EE,001A8348,word,00000000
 
 [Unpacked Streams]
-description=WARNING: DON'T ENABLE THIS PATCHES YET UNLESS YOU KNOW WHAT YOU DOING!
+description=Use unpacked streams audio instead of STREAMS.DAT. Only enable this after you properly extract STREAMS.DAT!
 author=Thiekus
 
 // For AUDIO\STREAMS and AUDIO\BANKS instead of STREAMS.DAT and BANKS.DAT
@@ -67,7 +67,15 @@ patch=0,EE,00409f14,word,24100000
 patch=0,EE,00409f24,word,00000000
 patch=0,EE,00409f28,word,00000000
 
+// Enforce sndStream::LocateStream to tell stream is exists
+// beq a0,zero,0x00395b30 => j 0x00395b58
+// This skips zipHashFile and zipFile altogether
+patch=0,EE,00395b00,word,080e56d6
+// move v0,zero => li v0,0x1
+patch=0,EE,00395b58,word,24020001
+
 // Enforce mcAudioPlaylist::GetTuneToPlay to exists
-// Special thanks to SaltySasha who did original MC3 HostFS
-// And I saw this only for stream features ;)
-patch=0,EE,00200974,word,00000000
+// Special thanks to SaltySasha who did original MC3 HostFS so I know this part exists.
+// This not used anymore as superseded by above sndStream::LocateStream patch
+// which have more global effect.
+//patch=0,EE,00200974,word,00000000
