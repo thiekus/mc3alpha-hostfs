@@ -24,4 +24,5 @@ Special thanks to SaltySasha who did original patch for MC3 HostFS and for figur
 * On Patches, Enable "Unpacked Streams" patch.
 
 ## Known Issues
-* Black screen after race if you apply *outdated* fixes from ghostie, please update ghostie pnach patches from [here](https://hiddenpalace.org/Midnight_Club_3:_DUB_Edition_(Oct_24,_2004_Prototype)). Without that patch, game stability is expected to be on par with original game, but may slightly better than original because doesn't use buggy `zipFile` classes.
+* Black screen after race if you apply *outdated* fixes from ghostie, please update ghostie pnach patches from [here](https://hiddenpalace.org/Midnight_Club_3:_DUB_Edition_(Oct_24,_2004_Prototype)). Without that patch, game stability is expected to be on par with original game, but may slightly better than original because sparingly use buggy `zipFile` classes.
+* Entering in particular order `Arcade Mode -> Main Menu -> Garage -> Cruise` at one session will consistently put game on indefinite loading. It's also happened with and without HostFS, patched or not atm.
