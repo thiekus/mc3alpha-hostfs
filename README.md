@@ -1,5 +1,5 @@
 # Midnight Club 3 DE Alpha October 2004 HostFS Unpacked
-HostFS support for Midnight Club 3: DUB Edition Alpha build from October 24th 2004. Unlike MC3DE Remix HostFS done by SaltySasha, this patch put all assets clobered on root directory, to minimize amount of functions to be patched.
+HostFS support for Midnight Club 3: DUB Edition Alpha build from October 24th 2004. Unlike MC3DE Remix HostFS done by SaltySasha, this patch put all assets messed up on root directory, to minimize amount of functions to be patched.
 Special thanks to SaltySasha who did original patch for MC3 HostFS and for figuring out how to load streams. And [Edness](https://ednessp.github.io/) for making `dave.py` and `hash_build.py` scripts used for extracting data.
 
 ## Install
