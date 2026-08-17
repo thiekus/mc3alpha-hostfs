@@ -60,6 +60,12 @@ patch=0,EE,001A8348,word,00000000
 // NOP at useless ipcSleep(1) when stream on buffering at datStreamer::Worker
 patch=0,EE,003F4258,word,00000000
 
+// Increase stream buffer from 130kb to 512kb per coreRawReadFile cycle
+// lui s2,0x2 => lui s2,0x8
+patch=0,EE,003f422c,word,3c120008
+// ori s2,s2,0x800 => ori s2,s2,0x0
+patch=0,EE,003f4230,word,36520000
+
 [Unpacked Streams]
 description=Use unpacked streams audio instead of STREAMS.DAT. Only enable this after you properly extract STREAMS.DAT!
 author=Thiekus
