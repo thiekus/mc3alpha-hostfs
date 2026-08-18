@@ -30,7 +30,7 @@ def enum_playlists(path='.'):
 		else:
 			path_ext = os.path.splitext(full_path)
 			# Put only .play playlist files
-			if path_ext[1] == ".play":
+			if path_ext[1].lower() == ".play":
 				lst.append(full_path)
 	return lst
 
